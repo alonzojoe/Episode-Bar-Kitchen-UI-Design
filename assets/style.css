@@ -7,6 +7,84 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    outline: none;
     border: none;
     transition: all .2 linear;
+}
+
+:root{
+    --color-dg-green: #184C21;
+    --color-lime: #9FFF2E;
+    --color-white: #FFFFFF;
+    --color-light: #747474;
+    --color-black: #182851;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    width: 40px;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--color-light);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: var(--color-white);
+    background: var(--color-dg-green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--color-black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: var(--color-white);
+    background: var(--color-dg-green);
+    transform: rotate(360deg);
+}
+
+header .icon #menu-bars{
+    display: none;
 }
