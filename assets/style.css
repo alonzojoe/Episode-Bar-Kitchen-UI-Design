@@ -85,6 +85,50 @@ header .icons a:hover{
     transform: rotate(360deg);
 }
 
-header .icon #menu-bars{
+header .icons #menu-bars{
     display: none;
+}
+
+/* media queries */
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header .icons #menu-bars{
+        display: inline-block;
+       
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-white);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        transition: .3s ease-in;
+    }
+
+    header .navbar.active{
+        top: 100%;
+        transition: .3s ease-in;
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
 }
