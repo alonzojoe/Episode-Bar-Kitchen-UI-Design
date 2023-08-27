@@ -94,6 +94,22 @@ header .logo img{
     width: 40px;
 }
 
+header .ep-logo{
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    background: var(--color-dg-green);
+    text-align: center;
+    line-height: 4.5rem;
+    color: var(--color-white);
+    font-size: 1.7rem;
+}
+
+header .ep-logo .dot{
+    color: var(--color-lime);
+    font-size: 1.7rem;
+}
+
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
